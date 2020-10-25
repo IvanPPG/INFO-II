@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\DemoSFML.dir/objects.a
+C:\msys64\mingw64\bin\ar.exe cr CMakeFiles\DemoSFML.dir/objects.a @CMakeFiles\DemoSFML.dir\objects1.rsp
+C:\msys64\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\DemoSFML.dir/objects.a -Wl,--no-whole-archive  -o DemoSFML.exe -Wl,--out-implib,libDemoSFML.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\DemoSFML.dir\linklibs.rsp
