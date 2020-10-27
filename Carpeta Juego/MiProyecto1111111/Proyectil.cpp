@@ -10,19 +10,16 @@ Proyectil::Proyectil(float x,float y,Texture &t) {
 }
 Proyectil::~Proyectil(){};
 bool Proyectil::mov(){
-	this->y-=40;
-	this->y--;
+	this->y-=25;
+	this->y;
 	if(this->y<0){
 		return true;
 	}else{
 		return false;
 	}
-
 }
 void Proyectil::dib(RenderWindow &w){
-	spr.setPosition(this->x-5, this->y--);
+	spr.setPosition(this->x+15, this->y-=2);
 	w.draw(spr);
-	
 }	
-
 

@@ -1,3 +1,4 @@
+#include <SFML/Graphics.hpp>
 #ifndef ARREGLO_H
 #define ARREGLO_H
 #include "Proyectil.h"
@@ -5,12 +6,11 @@
 class Arreglo {
 public:
 	Arreglo(){
-		proy=new Proyectil *[3];
-		size=3;
+		proy=new Proyectil *[2];
+		size=2;
 	    }
 	
 	    int getSize(){ return size;}
-	
 		Proyectil *getProyectil(int i){
 		  return proy[i];
 	    }

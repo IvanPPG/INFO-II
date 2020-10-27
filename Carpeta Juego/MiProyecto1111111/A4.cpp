@@ -2,10 +2,11 @@
 #include "A4.h"
 using namespace sf;
 
-A4::A4(float x_i,float y_i,Texture &t) {
+A4::A4(float x_i,float y_i,Texture &t, Texture &t_exp) {
 	x=x_i;
 	y=y_i;
 	s.setTexture(t);
+	s_exp.setTexture(t_exp);
 }
 void A4::mov(float x, float y){
 	this->x+=x;
@@ -13,8 +14,8 @@ void A4::mov(float x, float y){
 	if(this->x<0){
 		this->x=0;
 	}
-	if(this->x>400-s.getTexture()->getSize().x){
-		this->x=400-s.getTexture()->getSize().x;
+	if(this->x>600-s.getTexture()->getSize().x){
+		this->x=600-s.getTexture()->getSize().x;
 	}
 	if(this->y<0){
 		this->y=0;
@@ -29,3 +30,6 @@ void A4::dib(RenderWindow &w){
 	
 }
 
+void A4::colision(RenderWindow &w){
+	s=s_exp;
+}

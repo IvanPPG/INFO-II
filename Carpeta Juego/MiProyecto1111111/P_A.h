@@ -8,6 +8,8 @@ public:
 	P_A(float x_i,float y_i,Texture &tp_a);
 	void mov(float x, float y);
 	void dib(RenderWindow &w);
+	float getX(){return x;}
+	float getY(){return y;}
 private:
 	float x;
 	float y;
