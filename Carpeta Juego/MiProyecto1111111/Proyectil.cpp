@@ -10,7 +10,7 @@ Proyectil::Proyectil(float x,float y,Texture &t) {
 }
 Proyectil::~Proyectil(){};
 bool Proyectil::mov(){
-	this->y-=25;
+	this->y-=55;
 	this->y;
 	if(this->y<0){
 		return true;

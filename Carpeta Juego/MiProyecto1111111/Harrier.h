@@ -7,7 +7,7 @@ using namespace sf;
 class Harrier {
 public:
 	Harrier(float x_i,float y_i,Texture &th,Texture &t_exp);
-	void mov(float x, float y);
+	void mov(float x, float y, Sprite &spr);
 	void dib(RenderWindow &w, Texture &th);
 	void colision(RenderWindow &w);
 	float getY(){return y;};

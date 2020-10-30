@@ -2,10 +2,10 @@
 #include "P_A.h"
 using namespace sf;
 
-P_A::P_A(float x_p,float y_p,Texture &tp_a) {
+P_A::P_A(float x_p,float y_p,Texture &t) {
 	x=x_p;
 	y=y_p;
-	sp_a.setTexture(tp_a);
+	sp_a.setTexture(t);
 
 }
 void P_A::mov(float x, float y){
